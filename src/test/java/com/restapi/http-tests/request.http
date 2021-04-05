@@ -1,0 +1,34 @@
+PUT http://localhost:8080/store/gadget/register-product
+Content-Type: application/json
+
+{
+    "brand": "Lenovo",
+    "model": "Yoga",
+    "price": 1999000
+}
+
+POST http://localhost:8080/store/gadget/register-product
+Content-Type: application/json
+
+{
+    "brand": "Apple",
+    "model": "Mackbook Pro",
+    "price": 345
+}
+
+GET http://localhost:8080/store/gadget/get-all
+
+GET http://localhost:8080/store/gadget/view/1
+GET http://localhost:8080/store/gadget/view/2
+
+PUT http://localhost:8080/store/gadget/update/1
+Content-Type: application/json
+
+{
+    "brand": "Lenovo",
+    "model": "Yoga",
+    "price": 1999
+}
+
+DELETE http://localhost:8080/store/gadget/delete/2
+
